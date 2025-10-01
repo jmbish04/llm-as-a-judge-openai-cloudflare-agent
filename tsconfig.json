@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    /* Language and Environment */
+    /* Language and Environment (from base config and project needs) */
     "target": "ES2021",
     "lib": [
       "ES2022",
@@ -8,9 +8,9 @@
       "DOM.Iterable"
     ],
     "jsx": "react-jsx",
-    "useDefineForClassFields": true, // Recommended for React/Vite
+    "useDefineForClassFields": true,
     
-    /* Modules */
+    /* Modules (from base config and project needs) */
     "module": "ES2022",
     "moduleResolution": "bundler",
     "types": [
@@ -20,7 +20,7 @@
     "allowImportingTsExtensions": true,
     "esModuleInterop": true,
     "verbatimModuleSyntax": true,
-    "resolveJsonModule": true, // Enabling this based on a common pattern for 'bundler' mode
+    "resolveJsonModule": true,
     
     /* Emit */
     "noEmit": true,
