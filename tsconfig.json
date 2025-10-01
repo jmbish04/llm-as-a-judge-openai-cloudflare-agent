@@ -1,3 +1,42 @@
 {
-  "extends": "../../tsconfig.base.json"
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "ES2021",
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "jsx": "react-jsx",
+    "useDefineForClassFields": true, // Recommended for React/Vite
+    
+    /* Modules */
+    "module": "ES2022",
+    "moduleResolution": "bundler",
+    "types": [
+      "node",
+      "@cloudflare/workers-types"
+    ],
+    "allowImportingTsExtensions": true,
+    "esModuleInterop": true,
+    "verbatimModuleSyntax": true,
+    "resolveJsonModule": true, // Enabling this based on a common pattern for 'bundler' mode
+    
+    /* Emit */
+    "noEmit": true,
+    
+    /* Interop Constraints */
+    "isolatedModules": true,
+    "forceConsistentCasingInFileNames": true,
+    
+    /* Type Checking */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    
+    /* Completeness */
+    "skipLibCheck": true
+  },
+  "include": ["src", "vite.config.ts"]
 }
